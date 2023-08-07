@@ -1,0 +1,64 @@
+/* Recipe Component */
+.search{
+  height: 25vh;
+  border-bottom: 3px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+}
+
+.search > div{
+  grid-column: 1/3;
+  display: grid;
+  justify-items: center;
+  row-gap: 10px;
+}
+
+.form{
+  grid-column: 1/3;
+  width: 40%;
+  display: flex;
+  gap: 5px;
+}
+
+.form > input{
+  margin-right: auto;
+  width: 80%;
+  text-indent: 10px;
+  font-size: 100%;
+  border: 2px solid black;
+  color: grey;
+}
+
+input:focus{
+  outline: none;
+  color: black;
+}
+
+.search-button{
+  width: 100px;
+  height: 75px;
+  border-radius: 5px;
+  border: 2px solid black;
+  background-color: white;
+}
+
+.search-button:hover{
+  cursor: pointer;
+}
+
+.food-icons{
+  position: absolute;
+}
+
+.burger{
+  top: 20%;
+  left: 10%;
+}
+
+.pizza{
+  top: 20%;
+  right: 10%;
+}

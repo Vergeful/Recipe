@@ -1,0 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Mono', 'sans-seriff';
+}
+
+#root{
+  min-height: 100vh;
+  background-color: rgb(57, 197, 248);
+}
