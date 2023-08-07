@@ -1,7 +1,6 @@
-/* Recipe Component */
+/* Search Component */
 .search{
   height: 25vh;
-  border-bottom: 3px solid black;
   display: grid;
   grid-template-columns: 1fr 1fr ;
   justify-items: center;
@@ -75,12 +74,17 @@ input:focus{
 .recipe{
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
   align-items: center;
   border: 2px solid black;
   padding: 10px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+}
+
+.recipe:hover{
+  position: relative;
+  top: -1px;
 }
 
 .recipe-button{
@@ -93,3 +97,34 @@ input:focus{
   background-color: rgb(12, 136, 181);
   color: white;
 }
+
+img{
+  border-radius: 3px;
+}
+
+/* Recipe Modal*/
+
+
+
+/* Screen Responsiveness */
+@media only screen  and (max-width: 1000px) {
+  .form{
+    width: 60%;
+  }
+}
+
+@media only screen  and (max-width: 700px) {
+  .burger, .pizza{
+    top: 40%;
+  }
+
+  .form{
+    width: 90%;
+  }
+
+  .recipe-container{
+    grid-template-columns: 1fr;
+  }
+
+}
+

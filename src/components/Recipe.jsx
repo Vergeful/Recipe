@@ -3,7 +3,7 @@ export default function Recipe({id, imgSrc, title}) {
       <div className="recipe">
          <h2>{title}</h2>
          <img src={imgSrc}/>
-         <button className="recipe-button">SHOW RECIPE</button>
+         <button className="recipe-button" id={id}>SHOW RECIPE</button>
       </div>
     )
   }
