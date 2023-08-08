@@ -20,7 +20,7 @@ export default function Modal({recipeID, toggleDetailsModal}){
     }, [])
     console.log(info.instructions)
 
-    // dangerouslySetInnerHTML allowus us to display text from api with tags showing on screen.
+    // dangerouslySetInnerHTML allowus us to display text from api without tags showing on screen.
 
     return(
         <div className="modal-container">
