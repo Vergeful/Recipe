@@ -1,5 +1,4 @@
 // Modals show the item's name, ingredients and instuctions
-// There is a still a minor error of some instructions showing <ol> and <li> tags
 // Also a key 'prop' is needed when loading the ingredients to avoid React Error Message
 
 import { useEffect, useState } from 'react'
@@ -21,6 +20,8 @@ export default function Modal({recipeID, toggleDetailsModal}){
     }, [])
     console.log(info.instructions)
 
+    // dangerouslySetInnerHTML allowus us to display text from api with tags showing on screen.
+
     return(
         <div className="modal-container">
             <div className='modal'>
@@ -30,7 +31,7 @@ export default function Modal({recipeID, toggleDetailsModal}){
                 <h3>INGREDIENTS:</h3>
                 {   info.extendedIngredients?.map(i => <li>{i.original}</li>)   }
                 <h3>INSTRUCTIONS:</h3>
-                <div className='modal-instructions'>{info.instructions}</div>
+                <div className='modal-instructions' dangerouslySetInnerHTML={{__html:info.instructions}}></div>
             </div>
         </div>
     )
